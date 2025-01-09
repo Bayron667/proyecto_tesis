@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
+}
+
+@media (max-width: 768px) {
+    .card-data-user {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+.card-data-user {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.sidebar {
+    width: 200px;
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-item {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item.active,
+.sidebar-item:hover {
+    background-color: #e3f2fd;
+    color: #216fbd;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-section, .data-section, .password-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #eee;
+}
+
+.file-upload {
+    margin-top: 20px;
+}
+
+.input-group {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.input-group-texts {
+    background-color: #f4f7fa;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 12px 15px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-controls {
+    border: 1px solid #ddd;
+    border-radius: 0 8px 8px 0;
+    padding: 12px;
+    font-size: 14px;
+    background-color: #f4f7fa;
+}
+
+.button-primary, .button-danger {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.button-primary {
+    background-color: #216fbd;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-primary:hover {
+    background-color: #1a5a9c;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.button-primary:active {
+    background-color: #174b7a;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button-danger {
+    background-color: #f32424;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-danger:hover {
+    background-color: #d91e1e;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.button-danger:active {
+    background-color: #b31a1a;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.text-dangers {
+    color: #f32424;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: grid;
+    place-content: center;
+}

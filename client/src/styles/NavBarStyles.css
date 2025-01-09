@@ -1,0 +1,19 @@
+.logo-img {
+    width: auto; /* Ajusta automáticamente el ancho */
+    height: 60px; /* Establece la altura deseada */
+  }
+
+  .navbar{
+    background-color: #0c1d58; /* Color de fondo del Navbar */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white; /* Color de las letras */
+  }
+

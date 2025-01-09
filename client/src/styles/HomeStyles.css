@@ -1,0 +1,46 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    padding: 40px;
+    height: 50%;
+  }
+  
+  .inner-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  .text-column {
+    flex: 1;
+    box-sizing: border-box;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  
+  .animation-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .inner-container {
+      flex-direction: column;
+    }
+  
+    .text-column,
+    .animation-column {
+      flex: 1 1 100%;
+    }
+  }
+  

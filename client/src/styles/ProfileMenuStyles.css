@@ -1,0 +1,77 @@
+/* src/styles/ProfileMenuStyles.css */
+.profile-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    z-index: 1000;
+  }
+  
+  .profile-dropdown-item {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  .profile-dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .profile-dropdown-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .profile-buttons {
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    gap: 0px;
+
+    }  
+  .profile-button {
+    padding-top: 10px;
+    background: none;
+    border: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 991px) {
+    .profile-picture {
+      display: none;
+    }
+  
+    .profile-buttons {
+      display: flex;
+    }
+  }
+  
